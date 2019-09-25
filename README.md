@@ -24,12 +24,15 @@ roslaunch proto_net agent_n_enviroment.launch
 ```
 
 **ELSE** 
-the long way
-create [ws](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
-create package(http://wiki.ros.org/ROS/Tutorials/BuildingPackages)
-copy srv launch scripts msg into your package
-Modify CMakeList.txt to for [srv and msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)
-in workspace call
+the long way:
+  * Create [ws](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
+  * Create package(http://wiki.ros.org/ROS/Tutorials/BuildingPackages)
+  * Copy srv launch scripts msg into your package 
+
+
+  * Copy srv launch scripts msg into your package
+  * Modify CMakeList.txt to for [srv and msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)
+  * In workspace call:
 ```
 catkin_make
 ```
