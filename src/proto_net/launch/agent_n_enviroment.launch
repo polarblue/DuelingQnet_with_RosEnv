@@ -1,0 +1,11 @@
+<launch>
+   
+   <node name="agent" pkg="proto_net" type="dueling_qnet.py" output="screen"/>
+   <node name="enviroment" pkg="proto_net" type="env_service.py"/>
+
+</launch>
+
+
+
+
+
