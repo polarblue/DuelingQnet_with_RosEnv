@@ -18,7 +18,24 @@ Install [ROS Kinetic](http://wiki.ros.org/kinetic/Installation)
 
 download workspace
   follow [guide](https://answers.ros.org/question/193901/how-to-migrate-a-catkin-workspace/) on migrating a workspace
-finally 
+**finally **
 ```
 roslaunch proto_net agent_n_enviroment.launch 
 ```
+
+**ELSE** 
+the long way
+create [ws](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
+create package(http://wiki.ros.org/ROS/Tutorials/BuildingPackages)
+copy srv launch scripts msg into your package
+Modify CMakeList.txt to for [srv and msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)
+in workspace call
+```
+catkin_make
+```
+**finally **
+```
+roslaunch proto_net agent_n_enviroment.launch 
+```
+
+
